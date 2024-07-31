@@ -1,0 +1,11 @@
+const addcardbtn=document.getElementById('add-card');
+const clearcardsbtn=document.getElementById('clear-cards');
+const cardscon=document.getElementById('card-con');
+const prevbtn=document.getElementById('prev-btn');
+const currentnav=document.getElementById('current-card');
+const nextcardbtn=document.getElementById('next-btn');
+const cancebtn=document.getElementById('cancel-btn');
+const questioninput=document.getElementById('question');
+const anwserinput=document.getElementById('anwser');
+const addcardsubmitbtn=document.getElementById('add-card-btn');
+const addcardcon=document.getElementById('add-card-con');

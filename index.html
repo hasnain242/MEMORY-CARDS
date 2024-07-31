@@ -1,69 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>memory-cards</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <h1>memory cards
-        <button id="add-card" class="btn btn-small">
-            <i class="fas fa-plus"></i>
-        </button>
-        <button id="clear-cards" class="btn btn-small">
-            <i class="fas fa-trash"></i>
-        </button>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h1>
+      memory cards
+      <button id="add-card" class="btn btn-small">
+        <i class="fas fa-plus"></i>
+      </button>
+      <button id="clear-cards" class="btn btn-small">
+        <i class="fas fa-trash"></i>
+      </button>
     </h1>
-    <div class="cards-con" id="cards-con">
-      <div class="card">
-        
-        <div class="card-front">
-         <p>question</p>
-        </div>
-        <div class="card-back">
-            <p>answer</p>
-        </div>
-      </div>
-      <div class="card">
-        
-        <div class="card-front">
-         <p>question</p>
-        </div>
-        <div class="card-back">
-            <p>answer</p>
-        </div>
-      </div>
-    
+    <div class="cards-con" id="cards-con"></div>
+
     <div class="nav">
         <button class="btn-nav" id="prev-btn">
-            <i class="fas fa-arrow-left"></i>
+          <i class="fas fa-arrow-left"></i>
         </button>
         <p id="current-card"></p>
         <button class="btn-nav" id="prev-btn">
-            <i class="fas fa-arrow-right"></i>
+          <i class="fas fa-arrow-right"></i>
         </button>
     </div>
-</div>
 
-     <div class="add-card-con" id="add-card-con">
-        <h1>add new card
-            <button class="btn btn-small" id="cancel-btn">
-                <i class="fas fa-times"></i>
-            </button>
-        </h1>
-        <div class="add-card-form-group">
-            <label for="question">question</label>
-            <textarea name="" id="question" class="question-input" placeholder="enter question here"></textarea>
-            
-        </div>
-        <label for="answer">answer</label>
-            <textarea name="" id="answer" class="answer" placeholder="enter answer here"></textarea><br>
-        <button class="btn" id="add-card-btn">
-            add-card
+    <div class="add-card-con" id="add-card-con">
+      <h1>
+        add new card
+        <button class="btn btn-small" id="cancel-btn">
+          <i class="fas fa-times"></i>
         </button>
-     </div>
+      </h1>
+      <div class="add-card-form-group">
+        <label for="question">question</label>
+        <textarea
+          name=""
+          id="question"
+          class="question-input"
+          placeholder="enter question here"
+        ></textarea>
+      </div>
+      <label for="answer">answer</label>
+      <textarea
+        name=""
+        id="answer"
+        class="answer"
+        placeholder="enter answer here"
+      ></textarea
+      ><br />
+      <button class="btn" id="add-card-btn">add-card</button>
+    </div>
+
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
