@@ -57,9 +57,14 @@ h1 button#clear-cards{
     transform: translateX(50%) rotateY(10deg);
 
 }
+.card.right{
+    transform: translateX(-50%) rotateY(10deg);
+
+}
 .card.active{
     opacity: 1;
     transform: translateX(0) rotateY(0deg);
+    z-index: 10;
 }
 .card.show-answer .inside-card{
     transform: rotateX(180deg);
@@ -129,6 +134,7 @@ font-size:18px ;
     width: 100%;
     height: 100%;
     transition: 0.5s ease;
+    z-index: -1;
 }
 
 .add-card-con h1{
@@ -149,4 +155,5 @@ textarea{
 }
 .add-card-con.active{
     opacity: 1;
+    z-index: 0;
 }
